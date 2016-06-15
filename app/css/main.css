@@ -179,7 +179,7 @@ ul {
   margin: auto;
   overflow: hidden;
   background-size: 100%;
-  background-color: #F2F3F5; }
+  background-color: #f2f3f5; }
 
 .gray_line {
   width: 100%;
@@ -592,6 +592,20 @@ h1 {
   float: right;
   margin: 0 0 15px 15px; }
 
+.partners {
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+  z-index: 1000; }
+  .partners .like_h3 {
+    text-align: left;
+    color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 30px;
+    margin-bottom: 50px; }
+  .partners img {
+    max-width: 100%; }
+
 .price_table {
   font-family: RobotoB;
   width: 100%;
@@ -673,29 +687,35 @@ h1 {
 .content .last_news {
   color: #000;
   font-family: Roboto;
-  margin-top: 45px; }
+  margin-top: 45px;
+  margin-bottom: 50px;
+  overflow: hidden; }
   .content .last_news .like_h3 {
     color: #000;
     font-family: Roboto;
     font-size: 30px;
     margin-bottom: 30px; }
-  .content .last_news ul li {
-    padding-left: 0;
-    background: none;
-    overflow: hidden;
-    margin-bottom: 30px;
-    font-family: Roboto;
-    font-size: 14px;
-    float: left;
-    width: 265px;
-    margin-right: 30px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    background-color: #FFF; }
-    .content .last_news ul li:nth-child(3n) {
-      margin-right: 0; }
+  .content .last_news ul {
+    text-align: center;
+    display: block;
+    padding-right: 0; }
+    .content .last_news ul li {
+      padding-left: 0;
+      background: none;
+      overflow: hidden;
+      margin-bottom: 30px;
+      font-family: Roboto;
+      font-size: 14px;
+      display: inline-block;
+      width: 270px;
+      margin-right: 25px;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      background-color: #FFF; }
+      .content .last_news ul li:nth-child(3n) {
+        margin-right: 0; }
   .content .last_news a {
     color: black;
     font-family: RobotoM;
@@ -708,15 +728,19 @@ h1 {
   .content .last_news p {
     line-height: 1.3; }
   .content .last_news .all_lnews_link {
+    width: 125px;
+    height: 40px;
+    background-color: #be1518;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    padding: 12px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
-    text-align: left;
-    color: #18487b;
-    font-family: RobotoM;
-    font-size: 14px;
-    text-decoration: underline;
-    margin-top: 30px; }
-    .content .last_news .all_lnews_link:hover {
-      text-decoration: none; }
+    line-height: 1; }
 
 .content .text_news {
   padding: 25px 20px 20px 20px;
@@ -853,13 +877,41 @@ h1 {
   text-align: center;
   float: left; }
 
+.bot_banner {
+  margin: 80px 0 0 0;
+  padding: 25px 0;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  background-color: #FFF; }
+  .bot_banner img {
+    max-width: 100%; }
+
+.bot-mnu-social {
+  overflow: hidden;
+  margin-bottom: 30px; }
+
+.bot_mnu li {
+  float: left;
+  margin-right: 44px; }
+  .bot_mnu li:first-child {
+    margin-left: 0; }
+  .bot_mnu li:last-child {
+    margin-right: 0; }
+
+.bot_mnu a {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: 15px; }
+
+.social {
+  float: right; }
+
 .footer {
-  background-color: #f03226;
+  background-color: #767676;
   color: #fff;
   overflow: hidden;
-  border-top: 1px solid #F60;
-  padding: 25px 0 20px 0;
-  height: 65px;
+  padding: 30px 0 15px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -888,7 +940,7 @@ h1 {
     font-family: MuseoSansCyrl500; }
 
 .footer_mail a {
-  float: right;
+  float: left;
   color: #fff;
   font-family: Roboto;
   font-size: 14px;
