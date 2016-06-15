@@ -1,0 +1,961 @@
+@import _mnu
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+\:focus
+  outline: 0
+
+body
+  line-height: 1
+  color: black
+  background: white
+
+ol, ul
+  list-style: none
+
+table
+  border-collapse: separate
+  border-spacing: 0
+
+caption, th, td
+  text-align: left
+  font-weight: normal
+
+blockquote
+  &:before, &:after
+    content: ""
+
+q
+  &:before, &:after
+    content: ""
+
+blockquote, q
+  quotes: "" ""
+
+li 
+	list-style: none
+
+ul 
+	padding: 0
+	margin: 0
+
+@import _fonts
+
+.wrapper 
+	width: 100%
+	margin: auto
+	overflow: hidden
+	background: #000 url("../img/bg.jpg") no-repeat top center
+	background-size:  cover
+	padding-top: 15px
+
+.all_center 
+	width: 1170px
+	margin: auto
+	box-sizing: border-box
+	background-color: #FFF
+	border: 1px solid #e7d48d
+	box-shadow: 0 0 0 15px #ffffff, 0 1px 5px 18px rgba(0, 0, 0, 0.3)
+	margin-bottom: 0
+	position: relative
+	margin-top: 15px
+ 
+.corner 
+	position: absolute
+	width: 50px
+	height: 40px
+	background-position: 0 0
+	background-repeat: no-repeat 
+
+.corner1 
+	background-image: url("../img/lt_corner.jpg") 
+	top: -4px
+	left: -7px
+	z-index: 100
+
+.corner2 
+	background-image: url("../img/rt_corner.jpg") 
+	top: -4px
+	right: -7px
+	z-index: 100
+
+.corner3 
+	background-image: url("../img/lb_corner.jpg") 
+	bottom: -4px
+	left: -7px
+	z-index: 100
+	
+.corner4 
+	background-image: url("../img/rb_corner.jpg") 
+	bottom: -4px
+	right: -7px
+	z-index: 100
+
+.w_1200
+	max-width: 1200px
+	width: 100%
+	margin: auto
+	box-sizing: border-box
+
+.all_center 
+	max-width: 1170px
+	width: 100%
+	margin: 15px auto
+	box-sizing: border-box	
+
+b, strong 
+	font-family: MuseoSansCyrl700
+
+.top
+	position: relative
+	padding-top: 15px
+
+.top, .top .w_1200 
+	height: 122px
+
+.top .w_1200 
+	position: relative
+
+.col-logo 
+
+.logo 
+	margin-left: -14px
+ 			
+.col-mnu  
+	box-sizing: border-box
+
+.top_mnu
+	position: relative
+	z-index: 1
+	padding-left: 32px
+	ul
+		margin: 0
+	li 
+		list-style: none
+		line-height: 1
+		margin-bottom: 10px
+		width: 225px
+		float: left
+		display: block
+		&:first-child 
+			margin-left: 0
+		&:last-child 
+			margin-right: 0
+				
+	a 		
+		color: #000
+		display: block
+		font-family: "Trebuchet MS"
+		font-size: 15px
+		line-height: 1
+		box-sizing: border-box
+		&:hover
+			text-decoration: underline
+			
+.active a 
+	text-decoration: underline
+
+.top_contacts 
+	color: #000 
+	margin-top: 25px
+
+.top_phone
+	color: #000
+	font-family: "Trebuchet MS"
+	font-size: 18px
+	text-transform: uppercase
+	background: url("../img/top_icon_phone.png") no-repeat left center
+	padding-left: 21px
+	
+.top_mail
+	box-sizing: border-box
+	a
+		margin-bottom: 20px
+		display: block
+		color: #000
+		font-family: "Trebuchet MS"
+		font-size: 14px
+		text-decoration: underline
+		background: url("../img/top_icon_mail.png") no-repeat left center
+		padding-left: 22px
+		
+.top_adress 
+	color: #000
+	background: url("../img/top_icon_adress.png") no-repeat left center
+	padding-left: 22px
+	font-family: "Trebuchet MS"
+	font-size: 12px
+	font-weight: 500 
+	line-height: 1.3
+	min-height: 16px
+	margin-bottom: 20px
+
+.nopadding 
+	padding: 0 !important
+	
+.nopadding-l 
+	padding-left: 0 !important
+
+.nopadding-r
+	padding-right: 0 !important
+
+.slider_wrap 
+	width: 100%
+	margin: auto
+	overflow: hidden
+	position: relative
+	background-color: #36A6CF 
+	padding-top: 5px
+	.like_h2 
+		color: white
+		font-family: MuseoSansCyrl900
+		font-size: 24px
+		margin-bottom: 12px
+		margin-top: 0
+
+.slider 
+	max-width: 1170px
+	margin: auto
+	min-height: 265px
+
+	.slide 
+		min-height: 265px
+	
+
+.slider_ul 
+	z-index: 10
+
+.slider_text
+	position: absolute
+	top: 35px
+	left: 70px
+	li
+		color: white
+		font-family: MuseoSansCyrl300
+		font-size: 16px
+		margin-bottom: 0px
+		line-height: 1
+		&:before 
+			content: "— " 
+			color: white
+			font-family: MuseoSansCyrl700
+			font-size: 25px
+			margin-right: 10px
+
+.order
+	height: 40px
+	box-sizing: border-box
+	background-color: rgb(255, 240, 0)
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%)
+	border-radius: 4px
+	box-shadow: 0 0 10px rgba(242, 148, 0, 0.75)
+	display: block
+	position: absolute
+	left: 70px
+	bottom: 30px
+	color: black
+	font-family: MuseoSansCyrl300
+	font-size: 16px
+	text-align: center
+	text-decoration: none
+	padding: 12px 20px
+	&:hover 
+		text-decoration: none
+		color: #000 
+	&:focus
+		text-decoration: none
+		color: #000 
+
+/**************************************************/
+.slider
+  position: relative
+  width: 100%
+  overflow: hidden
+  
+.top_slider_wrap
+
+.slides
+  height: 100% 
+  overflow: hidden
+  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
+
+.slide
+  height: 100%
+  float: left
+  clear: none
+  position: relative
+
+.box 
+	position: relative
+	font-size: 0	
+
+.slider-arrow
+  position: absolute
+  display: block
+  margin-bottom: -20px
+  padding: 20px
+  background-color: #000
+  opacity: 0.3
+  text-decoration: none
+  color: #FFF
+  font-family: Verdana
+  border-radius: 3px
+  &:hover
+    opacity: 0.5
+
+.slider-arrow--right
+  bottom: 50%
+  right: 0
+
+.slider-arrow--left
+  bottom: 50%
+  left: 0
+
+.slider-nav
+  position: absolute
+  bottom: 15px
+  z-index: 100 
+
+.slider-nav__item
+  width: 7px
+  height: 7px
+  float: left
+  clear: none
+  display: block
+  margin: 0 1.5px
+  background: #a6f1ff
+  border-radius: 50px
+  &:focus 
+  	outline: none 		
+  
+
+.slider-nav__item--current
+  background-color: #fff
+
+.slider-arrow
+	height: 44px
+	width: 22px
+	background-color: transparent 
+	line-height: 1
+	opacity: 1
+	bottom: 115px
+
+.slider-arrow.slider-arrow--right
+	background: url("../img/arr_r.png") no-repeat 0 0
+	right: 0
+.slider-arrow.slider-arrow--left 
+	background: url("../img/arr_l.png") no-repeat 0 0
+	left: 0
+
+
+/**************************************************/
+.col-left-top-mnu 
+	overflow: hidden
+
+.left_top_mnu_wrap 
+	width: 100%	
+
+.left_mnu._top 
+	overflow: hidden
+	width: 100%
+	margin-top: 25px
+	margin-bottom: 0
+	padding-bottom: 0
+
+.left_mnu 
+	margin-bottom: 20px
+	box-sizing: border-box
+	width: 250px
+	overflow: hidden
+	border: 1px solid #dfdfdf
+	ul 
+		padding: 13px 17px
+	.like_h2
+		text-align: center
+		font-family: "Trebuchet MS"
+		color: #35446e
+		padding: 15px 35px
+		font-size: 16px
+		border-bottom: 1px solid #dfdfdf
+		background: url("../img/h2_bg1.png") no-repeat left 15px center, url("../img/h2_bg2.png") no-repeat right 15px center
+	li
+		box-sizing: border-box
+		margin-bottom: 17px
+		&:last-child 
+			margin-bottom: 0	
+		
+	a 
+		color: #000
+		font-family: "Trebuchet MS"
+		font-size: 14px
+		line-height: 30px
+		box-sizing: border-box
+		line-height: 1
+		display: block
+		text-decoration: none
+		border: 1px solid transparent
+		border-radius: 4px
+		background: url("../img/def.png") no-repeat left center
+		padding-left: 17px
+		&:hover 
+			color: #35446e
+			text-decoration: none
+			background: url("../img/def2.png") no-repeat left center
+	.active
+		a
+			color: #35446e
+			text-decoration: none
+			background: none  
+			background: url("../img/def2.png") no-repeat left center
+
+.about 
+	border-radius:  4px
+	overflow: hidden
+	padding: 20px
+	box-sizing: border-box
+	background-color: #FFF 
+	margin-bottom: 25px
+	background: url("../img/about_bg.png") no-repeat bottom center
+	min-height: 454px
+	box-sizing: border-box
+		
+.main_content 
+	overflow: hidden
+	padding-top: 20px
+	padding-bottom: 25px
+		
+.content 
+	width: 885px
+	padding: 0 15px
+	color: #2f2f2f
+	font-family: "Trebuchet MS"
+	font-size: 15px
+	line-height: 21px
+	p 
+		margin-bottom: 20px
+		overflow: hidden
+		&:last-child 
+			margin-bottom: 0
+
+.banner 
+	margin-bottom: 25px	
+	img 
+		max-width: 100% 
+
+.border_gold 
+	position: relative
+	width: 850px
+	height: 303px
+	&:after 
+		position: absolute
+		content: ""
+		display: block
+		border: 1px solid #d5bb58
+		box-shadow: 0 0 0 10px transparent
+		width: 830px
+		height: 283px
+		top: 10px
+		left: 10px   
+h1 
+	color: #2f2f2f
+	font-family: "Trebuchet MS"
+	font-size: 30px
+	margin-bottom: 20px
+	line-height: 1
+.content
+	h2
+		color: #2f2f2f
+		font-family: "Trebuchet MS"
+		font-size: 27px
+		margin-bottom: 20px
+	h3
+		color: #2f2f2f
+		font-family: "Trebuchet MS"
+		font-size: 24px
+		margin-bottom: 20px
+
+.orange_left 
+	border-left: 4px solid rgb(255, 102, 0)
+
+.img_block_text 
+	padding: 20px
+	float: left
+	box-sizing: border-box
+	width: 600px
+
+.floatleft 
+	float: left
+	margin: 0 15px 15px 0 
+
+.floatright 
+	float: right
+	margin: 0 0 15px 15px
+
+.price_table
+	font-family: RobotoB 
+	width: 100%
+	margin-top: 20px
+	margin-bottom: 25px	
+	tr 
+		&:first-child 
+			td 
+				font-family: "Trebuchet MS"
+				font-size: 17px
+				color: #FFF
+				padding: 15px
+				color: #fff
+				background-color: #35446e
+				border-right: none
+
+	td 
+		padding: 5px 15px
+		box-sizing: border-box
+		vertical-align: middle
+		border-bottom: 1px solid #dddfe0 
+		padding: 10px 15px
+		font-size: 15px
+		line-height: 1
+		font-family: "Trebuchet MS"
+		color: #35446e
+		&:first-child
+			font-family: "Trebuchet MS"
+			color: #35446e
+			border-right: 1px solid #dddfe0
+			border-left: 1px solid #dddfe0
+		&:nth-child(2n) 
+	  	border-right: 1px solid #dddfe0
+	  	font-family: "Trebuchet MSI"
+	  	font-size: 14px
+	  	color: #636363
+	  	font-weight: normal
+		&:nth-child(3n) 
+			color: #35446e
+			font-family: "Trebuchet MS"
+			font-weight: 700 
+			font-size: 14px
+			border-right: 1px solid #dddfe0
+			background-color: #F6F6F6 
+				
+	tbody 
+		tr 
+			color: rgb(47, 47, 47)
+			font-family: MuseoSansCyrl500
+			font-size: 15px
+		td 
+			&:nth-child(2n-1) 
+				width: 50%
+			&:nth-child(2n) 
+				width: 30%
+
+.price_table.inner_table
+	tr
+		&:first-child 
+			td 
+				color: #FFF 
+	td
+		&:nth-child(2n) 
+			color: rgb(132, 132, 132) 
+		&:nth-child(3n) 
+			color: rgb(255, 102, 0)
+		
+		
+.content			
+	.last_news
+		color: #000
+		font-family: Roboto  
+		margin-top: 45px
+		margin-bottom: 30px
+		overflow: hidden
+		.like_h3 
+			color: #35446e
+			font-family: "Trebuchet MS"
+			font-size: 30px
+			margin-bottom: 20px
+		ul
+			li 
+				padding-left: 0
+				background: none
+				overflow: hidden
+				margin-bottom: 10px
+				font-size: 14px
+				background-color: #F3F3F3
+				font-family: "Trebuchet MS" 
+				font-style: italic 
+				color: #676767
+				&:last-child 
+					margin-bottom: 0			
+					 		
+		a
+			color: #1f5785
+			font-family: "Trebuchet MS"
+			font-size: 16px
+			text-decoration: underline
+			margin-bottom: 10px
+			display: block
+			font-style: normal
+			&:hover 
+				text-decoration: none
+		p 
+			line-height: 1.3				
+					
+		.all_lnews_link 
+			display: block
+			text-align: right
+			color: #1f5785
+			font-family: "Trebuchet MS"
+			font-size: 14px
+			text-decoration: underline
+			margin-top: -35px
+			padding-right: 25px
+			&:hover 
+				text-decoration: none
+
+.text_news 
+	padding: 15px 25px
+	float: left
+	box-sizing: border-box
+	width: 465px
+	background: #f3f3f3 none repeat scroll 0 0 
+
+.img_news 
+	overflow: hidden
+	float: left
+	margin-right: 0px
+	width: 375px
+	font-size: 0
+	height: 136px
+	position: relative
+	&:after
+		display: block
+		content: "" 
+		position: absolute
+		border: 1px solid #d5bb58
+		box-shadow: 0 0 0 10px transparent
+		left: 10px
+		top: 10px
+		width: 355px
+		height: 116px
+	
+.left_form
+	width: 250px
+	box-sizing: border-box
+	position: relative
+	margin-bottom: 30px
+	border: 1px solid #dfdfdf 
+	form 
+		padding: 20px
+	.like_h3 
+		text-align: center
+		font-family: "Trebuchet MS"
+		color: #35446e
+		padding: 15px 35px
+		font-size: 16px
+		border-bottom: 1px solid #dfdfdf
+		background: url("../img/h2_bg1.png") no-repeat left 15px center, url("../img/h2_bg2.png") no-repeat right 15px center
+		border-bottom: 1px solid #dfdfdf 
+	input 
+		box-sizing: border-box
+		height: 36px
+		width: 100%
+		background-color: #f4f4f4
+		border: none
+		padding: 0 18px
+		color: #6a6966
+		font-family: OpenSans
+		font-size: 14px
+		margin-bottom: 4px
+		
+	textarea 
+		box-sizing: border-box
+		width: 100%
+		height: 105px
+		background-color: #f4f4f4
+		border: none
+		padding: 10px 18px
+		color: #6a6966
+		font-family: OpenSans
+		font-size: 15px
+		margin-bottom: 5px
+
+	button 
+		width: 100%
+		height: 40px
+		background-color: #e7d48e
+		border: none
+		text-align: center
+		box-sizing: border-box
+		color: #35446e
+		font-size: 16px
+		line-height: 18px
+		font-family: "Trebuchet MS"
+		
+.left_widget_vk 
+	border: 1px solid #dfdfdf 
+	width: 250px
+	text-align: center
+	margin-top: 30px
+	margin-bottom: 20px
+	padding: 34px 19px 20px 19px
+	box-sizing: border-box
+
+.partners 
+	text-align: center
+	margin: 10px 0
+	position: relative
+	z-index: 1000
+	.like_h3 
+		text-align: left
+		color: #35446e
+		font-family: "Trebuchet MS"
+		font-size: 30px
+		margin-bottom: 20px
+
+.footer 
+	color: #fff
+	overflow: hidden 
+	padding: 15px 15px 15px 15px
+	box-sizing: border-box
+	.w_1200
+		overflow: hidden
+
+.copy
+	font-family: OpenSans
+	font-size: 12px 
+	
+.footer_adress
+	font-family: OpenSans
+	font-size: 12px
+	padding-left: 20px
+	background: url("../img/top_icon_adress2.png") no-repeat left center
+	min-height: 16px
+	line-height: 1.2
+	overflow: hidden
+	float: right
+
+.footer_phone 
+	font-family: OpenSansSB
+	font-size: 21px
+	padding-left: 20px
+	background: url("../img/top_icon_phone2.png") no-repeat left center
+	float: right
+	span
+		font-size: 12px
+		font-family: MuseoSansCyrl500
+
+.footer_mail
+	a
+		color: #fff
+		font-family: OpenSans
+		font-size: 14px
+		text-decoration: underline
+		padding-left: 20px
+		background: url("../img/top_icon_mail2.png") no-repeat left center
+		
+.content
+	font-family: Roboto
+	font-size: 15px 
+	padding-bottom: 20px
+	.bread 
+		margin-top: 12px
+		margin-bottom: 25px
+		width: 100%
+		padding: 0
+		box-sizing: border-box
+		margin-bottom: 25px
+		overflow: hidden
+		padding-bottom: 3px
+		li 
+			float: left
+			font-size: 14px
+			font-family: "Trebuchet MS"
+			margin-bottom: 10px
+			margin: 0
+			padding: 0
+			line-height: 1
+			background: none
+			list-style: none
+			&:before 
+				content: "" 
+			a
+				font-size: 14px
+				color: #2f2f2f
+				text-decoration: underline
+				&:hover 
+					text-decoration: none
+				
+				&:after 
+					line-height: 1.3
+					font-size: 14px
+					font-family: "Trebuchet MS"
+					content: "/"
+					color: #2f2f2f
+					float: right
+					margin-right: 10px
+					margin-left: 10px
+					display: inline
+			span
+				color: #35446e
+
+.content 
+	li 
+		margin-bottom: 13px
+		min-height: 20px
+		font-size: 14px
+		font-family: "Trebuchet MS"
+	ul
+		padding-left: 10px 
+		li 
+			padding-left: 15px
+			background: url("../img/def.png") no-repeat left center 		
+	ol 
+		list-style-type: none
+		counter-reset: num
+		li
+			line-height: 1.7
+			&:before 
+				content: counter(num) ' '
+				counter-increment: num
+				color: #35446e
+				font-family: "Trebuchet MS"
+				font-size: 16px							
+				text-align: center
+				display: block
+				float: left
+				line-height: 1.25
+				margin-right: 10px
+				width: 21px
+				height: 21px
+				background-color: #e7d48e
+
+.white_content
+	border-radius:  4px
+	background-color: #fff
+	overflow: hidden
+	padding: 20px
+	box-sizing: border-box 
+
+.lists 
+	overflow: hidden
+	margin-bottom: 20px
+
+.br5 
+	border-right: 5px
+
+.imgs 
+	margin-bottom: 50px
+	overflow: hidden
+
+blockquote
+	color: #2f2f2f
+	font-family: "Trebuchet MS"
+	font-size: 15px
+	line-height: 21px
+	padding: 35px 28px 25px 28px
+	box-sizing: border-box
+	width: 100%
+	position: relative
+	overflow: hidden
+	margin-bottom: 25px
+	border: 1px solid #e7d48d 
+	&:before
+    position: absolute
+    top: 17px
+    left: 17px
+    line-height: 1
+    background-image: url("../img/left_quote.png")
+	b 
+		color: #d5bb58
+		font-family: "Trebuchet MS"
+		font-weight: normal
+		font-size: 15px
+	&:after
+  	position: absolute
+  	bottom: 17px
+  	right: 17px
+  	background-image: url("../img/right_quote.png") 
+	p
+		padding-left: 28px
+	&:before, &:after
+		width: 12px
+		height: 9px
+		display: block
+		background-repeat: no-repeat
+		background-position: 0 0 
+	
+.m0 
+	margin: 0 !important
+
+.ml0 
+	margin-left: 0 !important
+	
+.mb0 
+	margin-bottom: 0 !important
+
+.bord4 
+	border-radius:  4px
+	overflow: hidden
+
+
+.tags 
+	height: 50px
+	overflow: hidden
+	padding-top: 23px
+	border-top: 1px solid #e0e0e0
+	box-sizing: border-box 
+	a
+		color: rgb(54, 166, 207)
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		margin-right: 30px
+		display: inline-block
+		&:hover 
+			text-decoration: none
+	.all_tags, .hide_tags 
+		color: black
+	
+.hide_tags 
+	display: none
+
+.clear 
+	clear: both
+
+.bot_mnu 
+	margin-top: 10px
+	li 
+		float: left
+		margin: 0 30px
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-right: 0
+	a 
+		color: white
+		font-family: "Trebuchet MS"
+		font-size: 15px
+
+.social 
+	float: right
+
+.w_1200_foot_2 
+	margin-top: 25px
+
+
+.right 
+	//float: right !important
+
+.left 
+	//float: left !important
+
+
+
+@import _media
