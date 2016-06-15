@@ -2,66 +2,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
-	.content .bread 
-		margin-bottom: 10px
-		margin-left: 0
-		padding-left: 0
-		overflow: hidden
-		ul 
-			margin-left: 0
-			overflow: hidden
-			padding-left: 5px
-			
-		
-	
-
-	.border_gold:after 
-		display: none
-
-	.img_news 
-		padding-top: 15px
-		padding-left: 15px
-
-	.bot_mnu
-		ul 
-			display: block
-			text-align: center
-		li
-			display: inline-block
-			margin: 0
-			margin-right: 30px
-			&:last-child 
-				margin-right: 0
-			
-
-	.img_news 
-		width: 40%
-		img
-			width: 100%
-	
-	.text_news
-		width: 60%
-
-	.img_news::after 
-		display: none
-
-	.partners img 
-		max-width: 100% 
-	
-	.col-top
-		margin-top: 20px
-		
-	.col-mnu 
-		margin-top: 15px
-
-	.all_center 
-		width: 94%	 
-		padding-right: 15px
-		padding-left: 15px
-
 	.left_form 
 		margin-bottom: 0
 	
+
 	.left_mnu._top li a:hover
 		background-color: #18487b !important
 		
@@ -74,10 +18,8 @@
 		padding-top: 0
 
 	.logo 
-		position: relative
-		z-index: 101
+		position: static
 		font-size: 0
-		margin-left: 5px
 		
 	.top_slider_wrap 
 
@@ -129,7 +71,6 @@
 			display: block
 			float: none
 			margin: 0
-			padding-left: 0
 		a 
 			display: block 
 			color: #FFF 
@@ -152,18 +93,17 @@
 		margin-right: 0
 	 
 	.top_mail 
-		float: left
-		margin-right: 40px
+		float: right
+		margin-right: 10px
 		min-height: 18px
 		
 	.top_adress 
-		float: left
+		float: right
 		text-align: left
-		margin-right: 40px
 	
 	.col-mnu 
 		float: right !important
-		z-index: 102 
+		margin-top: 10px
 	
 	.col-contacts 
 		float: left !important
@@ -248,14 +188,6 @@
 								
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
-	.bot_mnu
-		li 
-			margin-right: 10px
-			a 
-				font-size: 13px
-			
-		
-
 	.about 
 		background-size: 100% 	
 
@@ -278,26 +210,6 @@
 			margin-bottom: 10px !important
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
-	.col-mnu
-		margin-top: 20px
-
-	.col-top
-		float: left !important
-
-	.bot_mnu
-		margin-bottom: 10px
-		li 
-			float: none
-			margin-bottom: 10px
-			a 
-				font-size: 15px
-			
-
-	.social 
-		text-align: center
-		float: none
-		display: block
-
 	.footer
 		height: auto
 
@@ -368,6 +280,13 @@
 
 	.top_slider_wrap 
 	
+	.col-mnu 
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 100
+		margin-top: 0
+
 	.top_contacts
 		text-align: center
 		> div 
@@ -389,7 +308,7 @@
 			text-align: center
 			float: none
 	.top_adress 
-		margin-bottom: 10px
+		margin-bottom: 0
 		
 	.top, .top .w_1200 
 		height: auto
@@ -405,9 +324,6 @@
 	
 
 @media only screen and (max-width : 640px) 
-	.wrapper 
-		padding-top: 0
-
 	.slider 
 		img 
 			display: none
@@ -471,8 +387,7 @@
 	
 @media only screen and (max-width : 400px) 
 	.price_table td 
-		font-size: 11px !important
-		font-weight: normal !important
+		font-size: 11px
 	.slider_text 
 		top: 40px
 @media only screen and (max-width : 360px) 
