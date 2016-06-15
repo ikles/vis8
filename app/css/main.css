@@ -35,7 +35,7 @@
 .toggle-mnu span:before {
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
@@ -1134,14 +1134,39 @@ blockquote {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .bot_mnu a {
+    font-size: 13px; }
+  .left_form .like_h3 {
+    padding-left: 0; }
+  .left_form form {
+    width: 100%;
+    margin-left: 0; }
+  .left_mnu {
+    overflow: visible; }
+    .left_mnu ul {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin-left: 0; }
+    .left_mnu .like_h3 {
+      padding-left: 0; }
   .left_form {
     margin-bottom: 0; }
   .left_mnu._top li a:hover {
     background-color: #18487b !important; }
   .left_widget_vk {
-    width: 100%; }
+    width: 100%;
+    margin-left: 0; }
     .left_widget_vk img {
       width: 100%; }
+  .col-foot_phnoe {
+    padding-left: 15px !important; }
+  .bot_banner {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .content .last_news ul li {
+    width: 30%;
+    margin-right: 4%; }
   .main_content {
     padding-top: 0; }
   .logo {
@@ -1151,8 +1176,6 @@ blockquote {
     background: none; }
   .slider_wrap {
     border-top: 2px solid #fff; }
-  .gray_line {
-    display: none; }
   .tags {
     position: relative;
     margin-bottom: 15px; }
@@ -1212,17 +1235,19 @@ blockquote {
     margin-right: 10px;
     min-height: 18px; }
   .top_adress {
-    float: right;
+    float: left;
     text-align: left; }
   .col-mnu {
     float: right !important;
-    margin-top: 10px; }
+    margin-top: 25px; }
   .col-contacts {
     float: left !important; }
   .content, .left_mnu, .left_form {
     width: 100%; }
-  .footer_adress, .footer_phone {
+  .footer_adress {
     margin-left: 0;
+    float: right; }
+  .footer_phone {
     float: left; }
   .footer_mail a {
     float: left; }
@@ -1255,7 +1280,6 @@ blockquote {
       color: #FFF; }
   .left_top_mnu_wrap {
     background-image: none;
-    background-color: #717171;
     height: auto;
     overflow: hidden;
     min-height: auto;
