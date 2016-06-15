@@ -174,7 +174,8 @@ ul {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background-size: 100%; }
+  background-size: 100%;
+  background-color: #F2F3F5; }
 
 .gray_line {
   width: 100%;
@@ -199,7 +200,8 @@ b, strong {
 .top {
   position: relative;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.54);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.54); }
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.54);
+  background-color: #fff; }
 
 .top, .top .w_1200 {
   height: 133px; }
@@ -257,7 +259,7 @@ b, strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left;
-  padding-top: 2px; }
+  margin-top: 2px; }
   .top_mail a {
     color: #FFF;
     font-family: "Trebuchet MS";
@@ -277,7 +279,7 @@ b, strong {
   font-weight: 500;
   line-height: 1.3;
   min-height: 16px;
-  padding-top: 3px; }
+  margin-top: 3px; }
 
 .nopadding {
   padding: 0 !important; }
@@ -287,6 +289,13 @@ b, strong {
 
 .nopadding-r {
   padding-right: 0 !important; }
+
+.slider_banner {
+  margin: auto;
+  width: 100%;
+  max-width: 1400px; }
+  .slider_banner img {
+    max-width: 100%; }
 
 .slider_wrap {
   width: 100%;
@@ -447,28 +456,29 @@ b, strong {
 .col-left-top-mnu {
   overflow: hidden; }
 
-.left_top_mnu_wrap {
-  width: 100%; }
-
-.left_mnu._top {
-  overflow: hidden;
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 0;
-  padding-bottom: 0; }
-
 .left_mnu {
   margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden;
+  width: 285px; }
   .left_mnu .like_h2 {
-    font-family: MuseoSansCyrl900;
-    color: white;
-    padding: 20px;
-    font-size: 18px; }
+    font-family: "Trebuchet MS";
+    color: #000;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 5px; }
+  .left_mnu ul {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    background-color: #FFF;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    width: 270px;
+    margin-left: 5px; }
   .left_mnu li {
-    float: left;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-right: 2px;
