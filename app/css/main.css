@@ -878,7 +878,7 @@ h1 {
   float: left; }
 
 .bot_banner {
-  margin: 80px 0 0 0;
+  margin: 40px 0 0 0;
   padding: 25px 0;
   overflow: hidden;
   width: 100%;
@@ -891,18 +891,19 @@ h1 {
   overflow: hidden;
   margin-bottom: 30px; }
 
-.bot_mnu li {
-  float: left;
-  margin-right: 44px; }
-  .bot_mnu li:first-child {
-    margin-left: 0; }
-  .bot_mnu li:last-child {
-    margin-right: 0; }
-
-.bot_mnu a {
-  color: white;
-  font-family: "Trebuchet MS";
-  font-size: 15px; }
+.bot_mnu {
+  margin-top: 5px; }
+  .bot_mnu li {
+    float: left;
+    margin-right: 44px; }
+    .bot_mnu li:first-child {
+      margin-left: 0; }
+    .bot_mnu li:last-child {
+      margin-right: 0; }
+  .bot_mnu a {
+    color: white;
+    font-family: "Trebuchet MS";
+    font-size: 15px; }
 
 .social {
   float: right; }
@@ -911,16 +912,16 @@ h1 {
   background-color: #767676;
   color: #fff;
   overflow: hidden;
-  padding: 30px 0 15px 0;
+  padding: 25px 0 15px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 .copy {
-  font-family: Roboto;
+  font-family: OpenSans;
   font-size: 12px; }
 
 .footer_adress {
-  font-family: Roboto;
+  font-family: OpenSans;
   font-size: 12px;
   padding-left: 20px;
   background: url("../img/top_icon_adress.png") no-repeat left center;
@@ -930,8 +931,8 @@ h1 {
   float: right; }
 
 .footer_phone {
-  font-family: Roboto;
-  font-size: 18px;
+  font-family: OpenSansSB;
+  font-size: 21px;
   padding-left: 20px;
   background: url("../img/top_icon_phone.png") no-repeat left center;
   float: right; }
@@ -942,11 +943,12 @@ h1 {
 .footer_mail a {
   float: left;
   color: #fff;
-  font-family: Roboto;
+  font-family: OpenSans;
   font-size: 14px;
   text-decoration: underline;
   padding-left: 20px;
-  background: url("../img/top_icon_mail.png") no-repeat left center; }
+  background: url("../img/top_icon_mail.png") no-repeat left center;
+  margin-left: 15px; }
 
 .content {
   font-family: "Trebuchet MS";
