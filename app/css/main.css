@@ -457,16 +457,17 @@ b, strong {
   overflow: hidden; }
 
 .left_mnu {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   overflow: hidden;
-  width: 285px; }
+  width: 285px;
+  padding-bottom: 5px; }
   .left_mnu .like_h2 {
     font-family: "Trebuchet MS";
     color: #000;
-    font-size: 18px;
+    font-size: 21px;
     text-align: left;
     margin-bottom: 15px;
     padding-left: 5px; }
@@ -477,35 +478,44 @@ b, strong {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     width: 270px;
-    margin-left: 5px; }
+    margin-left: 5px;
+    padding: 13px 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .left_mnu li {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-right: 2px;
-    margin-bottom: 11px; }
+    margin-bottom: 15px; }
+    .left_mnu li:before {
+      display: block;
+      float: left;
+      content: "";
+      width: 20px;
+      height: 1px;
+      background: url("../img/defis.jpg") no-repeat left top;
+      margin-top: 7px;
+      margin-right: 12px; }
   .left_mnu a {
-    color: #caedff;
-    font-family: Roboto;
-    font-size: 15px;
-    line-height: 30px;
+    color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    line-height: 1;
+    line-height: 1.2;
+    padding-left: 30px;
     display: block;
-    padding: 5px 10px;
     text-decoration: underline;
-    border: 1px solid transparent;
-    -webkit-border-radius: 4px;
-            border-radius: 4px; }
-    .left_mnu a:hover {
-      color: #FFF;
-      text-decoration: none;
-      border: 1px solid #fff; }
-  .left_mnu .active a {
-    color: #FFF;
+    text-decoration: none; }
+  .left_mnu li:hover:before {
+    background-position: left -1px; }
+  .left_mnu li:hover a {
     text-decoration: none;
-    border: 1px solid #fff;
-    background: none; }
+    color: #be1518; }
+  .left_mnu .active:before {
+    background-position: left -1px; }
+  .left_mnu .active a {
+    text-decoration: none;
+    color: #be1518; }
 
 .about {
   -webkit-border-radius: 4px;
@@ -523,7 +533,7 @@ b, strong {
 .main_content {
   padding-bottom: 30px;
   overflow: hidden;
-  padding-top: 10px; }
+  padding-top: 30px; }
 
 .content {
   float: right;
@@ -543,8 +553,8 @@ b, strong {
 
 h1 {
   color: #2f2f2f;
-  font-family: Roboto;
-  font-size: 36px;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
   margin-bottom: 20px;
   line-height: 1; }
 
@@ -680,80 +690,93 @@ h1 {
   margin-right: 25px; }
 
 .left_form {
-  width: 270px;
-  background-color: #f03226;
+  width: 285px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 25px 30px 35px 30px;
   position: relative;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   margin-bottom: 30px; }
+  .left_form form {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    background-color: #FFF;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    width: 270px;
+    margin-left: 5px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .left_form .like_h3 {
-    color: #fff;
-    font-family: Roboto;
-    font-size: 24px;
-    margin-bottom: 25px;
-    text-align: center; }
+    font-family: "Trebuchet MS";
+    color: #000;
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 5px; }
   .left_form input {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 45px;
+    height: 35px;
     width: 100%;
-    background-color: #f03226;
+    background-color: #fff;
     border: none;
     padding: 0 18px;
-    color: #fff;
-    font-family: Roboto;
-    font-size: 15px;
-    margin-bottom: 14px;
-    border: 2px solid #fff;
-    -webkit-border-radius: 4px;
-            border-radius: 4px; }
-  .left_form input::-moz-placeholder {
-    color: #FFF; }
-  .left_form input::-webkit-input-placeholder {
-    color: #FFF; }
+    color: #6a6966;
+    font-family: OpenSans;
+    font-size: 14px;
+    margin-bottom: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16);
+            box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16); }
   .left_form textarea {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
     height: 105px;
-    background-color: #f03226;
+    background-color: #fff;
     border: none;
     padding: 10px 18px;
-    color: #fff;
-    font-family: Roboto;
-    font-size: 15px;
-    margin-bottom: 15px;
-    border: 2px solid #fff;
-    -webkit-border-radius: 4px;
-            border-radius: 4px; }
-  .left_form textarea::-moz-placeholder {
-    color: #FFF; }
-  .left_form textarea::-webkit-input-placeholder {
-    color: #FFF; }
+    color: #6a6966;
+    font-family: OpenSans;
+    font-size: 14px;
+    margin-bottom: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16);
+            box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16); }
   .left_form button {
     width: 100%;
-    height: 45px;
-    background-color: #fff;
+    height: 40px;
     border: none;
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    color: #f03226;
-    font-family: RobotoB;
-    font-size: 15px;
+    color: #fff;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
     line-height: 18px;
-    text-transform: uppercase;
-    -webkit-border-radius: 4px;
-            border-radius: 4px; }
+    background-color: #be1518;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    font-weight: 700; }
 
 .left_widget_vk {
   width: 270px;
+  margin-left: 5px;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 20px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .left_news .like_h3 {
   font-style: 18px;
@@ -831,7 +854,8 @@ h1 {
   background: url("../img/top_icon_mail.png") no-repeat left center; }
 
 .content {
-  font-family: Roboto;
+  font-family: "Trebuchet MS";
+  color: #2f2f2f;
   font-size: 15px; }
 
 .bread {
