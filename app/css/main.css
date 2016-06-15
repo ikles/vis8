@@ -593,28 +593,46 @@ h1 {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 30px;
-  border: 2px solid #18487B;
-  -webkit-border-radius: 4px;
-          border-radius: 4px; }
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
   .price_table td {
     padding: 10px 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     vertical-align: middle;
     border-bottom: 1px solid #dddfe0; }
-  .price_table tr:first-child td {
-    font-family: RobotoB;
-    font-size: 15px;
-    background-color: #18487B;
-    padding: 15px;
-    color: #fff;
-    border-right: none; }
+  .price_table tr:first-child {
+    -webkit-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+    position: relative; }
+    .price_table tr:first-child td {
+      background-color: #F8F8F8;
+      font-family: "Trebuchet MS";
+      font-size: 17px;
+      padding: 15px;
+      color: #000;
+      border-right: none; }
+    .price_table tr:first-child:after {
+      display: block;
+      position: absolute;
+      float: left;
+      content: "";
+      height: 12px;
+      width: 100%;
+      background: url("../img/shadow.jpg") no-repeat top center;
+      margin: auto;
+      bottom: 0;
+      right: 0; }
   .price_table td {
     padding: 10px 15px;
     font-size: 15px;
     line-height: 1;
     font-family: Roboto;
-    color: #2f2f2f; }
+    color: #2f2f2f;
+    background-color: #FFF; }
     .price_table td:first-child {
       font-family: RobotoB;
       color: #18487b;

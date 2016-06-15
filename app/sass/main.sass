@@ -459,8 +459,9 @@ h1
 	width: 100%
 	margin-top: 20px
 	margin-bottom: 30px
-	border: 2px solid #18487B 
-	border-radius: 4px 
+	border-radius: 5px 
+	overflow: hidden
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
 	td 
 		padding: 10px 15px
 		box-sizing: border-box
@@ -469,13 +470,26 @@ h1
 
 	tr 
 		&:first-child 
+			border-radius: 5px 5px 0 0
+			position: relative
 			td 
-				font-family: RobotoB
-				font-size: 15px
-				background-color: #18487B
+				background-color: #F8F8F8 
+				font-family: "Trebuchet MS"
+				font-size: 17px
 				padding: 15px
-				color: #fff
+				color: #000
 				border-right: none
+			&:after
+				display: block
+				position: absolute
+				float: left
+				content: "" 
+				height: 12px
+				width: 100%
+				background: url("../img/shadow.jpg") no-repeat top center
+				margin: auto
+				bottom: 0
+				right: 0								
 
 	td 
 		padding: 10px 15px
@@ -483,6 +497,7 @@ h1
 		line-height: 1
 		font-family: Roboto
 		color: #2f2f2f
+		background-color: #FFF 
 		&:first-child
 			font-family: RobotoB
 			color: #18487b
