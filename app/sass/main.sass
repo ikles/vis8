@@ -476,9 +476,11 @@ h1
 				background-color: #F8F8F8 
 				font-family: "Trebuchet MS"
 				font-size: 17px
-				padding: 15px
+				padding: 10px 15px
 				color: #000
 				border-right: none
+				font-style: normal
+				font-weight: normal
 			&:after
 				display: block
 				position: absolute
@@ -488,31 +490,33 @@ h1
 				width: 100%
 				background: url("../img/shadow.jpg") no-repeat top center
 				margin: auto
-				bottom: 0
+				bottom: -12px
 				right: 0								
 
 	td 
 		padding: 10px 15px
 		font-size: 15px
 		line-height: 1
-		font-family: Roboto
-		color: #2f2f2f
+		font-family: "Trebuchet MS"
+		color: #000
 		background-color: #FFF 
 		&:first-child
-			font-family: RobotoB
-			color: #18487b
-			border-right: 1px solid #dddfe0
+			font-family: "Trebuchet MS"
+			color: #000
 		&:nth-child(2n) 
-	  	border-right: 1px solid #dddfe0
+	  	font-family: "Trebuchet MS"
+	  	color: #636363
+	  	font-style: italic
+	  	font-weight: normal
 		&:nth-child(3n) 
-			color: #f03226
-			font-family: RobotoB
+			color: #be1518
+			font-family: "Trebuchet MS"
+			font-size: 14px
+			font-weight: bold
 		
-			
 	tbody 
 		tr 
 			color: rgb(47, 47, 47)
-			font-family: MuseoSansCyrl500
 			font-size: 15px
 		td 
 			&:nth-child(2n-1) 
@@ -524,7 +528,8 @@ h1
 	tr
 		&:first-child 
 			td 
-				color: #FFF 
+				font-style: normal
+				font-weight: normal
 	td
 		&:nth-child(2n) 
 			color: rgb(132, 132, 132) 
@@ -547,11 +552,17 @@ h1
 				padding-left: 0
 				background: none
 				overflow: hidden
-				margin-bottom: 35px
+				margin-bottom: 30px
 				font-family: Roboto
 				font-size: 14px
-				&:last-child 
-					margin-bottom: 0
+				float: left
+				width: 265px
+				margin-right: 30px
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
+				border-radius: 5px
+				background-color: #FFF 
+				&:nth-child(3n)
+					margin-right: 0					
 					 		
 		a
 			color: black
@@ -575,12 +586,20 @@ h1
 			margin-top: 30px
 			&:hover 
 				text-decoration: none
+.content
+	.text_news
+		padding: 25px 20px 20px 20px
+		font-family: "Trebuchet MSB"
+		font-size: 16px
+		color: #000
+		a
+			text-decoration: none
+			text-align: center
+			font-size: 16px
+			margin-bottom: 0
 
 .img_news 
 	overflow: hidden
-	border-radius:  4px
-	float: left
-	margin-right: 25px
 
 .left_form
 	width: 285px
